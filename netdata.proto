@@ -1,0 +1,11 @@
+package teleport;
+
+message NetDataProto {
+  required bytes Body = 1;
+  required string Operation = 2;
+  required string UID = 3;
+  required string From = 4;
+  required string To = 5;
+  required int64 Status = 6;
+}
+
