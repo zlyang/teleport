@@ -99,9 +99,9 @@ func New() Teleport {
     connPool:      make(map[string]*Connect),
     api:           API{},
     Protocol:      NewProtocol("henrylee2cn"),
-    apiReadChan:   make(chan *NetData, 4096),
+    apiReadChan:   make(chan *NetData, 1024*10),
     connWChanCap:  2048,
-    connBufferLen: 1024,
+    connBufferLen: 1024 * 10,
   }
 }
 
